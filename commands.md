@@ -4,10 +4,9 @@
 # Merge development into master
 1. Make sure your local versions of master and development are not ahead of the remote versions. If they are, pause and think.
 2. Bring your local branches up to date
-	git checkout development; git pull
-	git checkout master; git pull
+	- `git checkout development && git pull && git checkout master && git pull`
 3. Merge development into master
-	git checkout master; git merge development
+	- `git checkout master && git merge development`
 
 # Prune remote branches
 	git remote prune origin --dry-run
