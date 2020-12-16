@@ -18,3 +18,18 @@
 
 # Nice git log
 	git log --all --decorate --oneline --graph
+
+# Useful config
+NOTE: Use with care! Think especially of the credentials.
+```.gitconfig
+[credential]
+	helper = store
+
+[alias]
+	lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(cyan)%h%C(reset) - %C(white)(%ar)%C(reset) %C(magenta)%s%C(reset) %C(white)- %an%C(reset)%C(green)%d%C(reset)' --all
+	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(white)%h%C(reset) - %C(white)%aD%C(reset) %C(white)(%ar)%C(reset)%C(white)%d%C(reset)%n''          %C(white)%s%C(reset) %C(white)- %an%C(reset)' --all
+	lg = !"git lg1"
+[user]
+	name = Usually your actual name, often only you first name. Ultimately up to you.
+	email = Can be your email if you want. I often do "name@computer-name"
+```
