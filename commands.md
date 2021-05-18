@@ -33,3 +33,6 @@ NOTE: Use with care! Think especially of the credentials.
 	name = Usually your actual name, often only you first name. Ultimately up to you.
 	email = Can be your email if you want. I often do "name@computer-name"
 ```
+
+# History of a single file
+	git log --follow -p -- path-to-file
